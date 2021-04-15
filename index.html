@@ -1,29 +1,102 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title></title>
-  <style>
-   body{
-     background-color:#00FFFF;
-}
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/18e20b5b96.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/login.css"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> <title>SIGN IN</title>
+  <style> 
+    *{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Varela Round', sans-serif; 
+    } 
+  body{ 
+  	
+	background: url("C:/Users/erick/OneDrive/Documentos/sublimetext/fonfo.jpeg") no-repeat center center fixed; background-size: cover;
+  	} 
+  .container{ 
+    color: white; 
+	position: absolute; 
+	top: 35%; 
+	left: 44%; 
+    }
+ .container 
+    h1{ 
+ 	display: inline-block;
+ 	font-size: 30px; 
+ 	border-bottom: 3px solid #00DD00;
+ 	margin-bottom: 30px; 
+ 	padding: 12 0px; 
+ 	}
+  .box{ 
+  	border-top: 2px solid #00DD00;
+  	border-bottom: 2px solid #00DD00;
+  	margin-bottom: 15px;
+  	border-radius: 10px; 
+  	} 
+ .box input{
+    height: 100%; 
+    width: 75%; 
+    color: rgb(255, 255, 255);
+    border: none; 
+    outline: none; 
+    margin: 0; 
+    padding: 10px 23px 2px 5px;
+    font-size: 20px;
+    background: none; 
+    } 
+  .btn{ 
+	cursor: pointer; 
+	outline: none; 
+	width: 25%;
+	margin: 12px 0px;
+	padding: 6px; 
+	border-radius: 10px; 
+	border: 2px solid #00DD00; 
+	background: none;
+	color: white; 
+	font-weight: bold; 
+	}
+ .box i{ 
+ 	padding: 10px 5px;
+ 	text-align: center; 
+ 	}
+  #icon2{ 
+  	padding-left: 
+  	7px; 
+    } 
+ .btn:hover{ 
+	border: none; 
+	color: #00DD00; 
+	background-color: white ; 
+	box-shadow: 0 0 10px #00DD00, 0 0 40px #00DD00, 0 0 80px #00DD00; 
+    }
+ .box:hover{ 
+ 	color: #00DD00;
+ 	background-color: white; 
+ 	box-shadow: 0 0 10px #00DD00, 0 0 40px #00DD00, 0 0 80px #00DD00;
+ 	}
+  .box input:hover{ color: #00DD00; }
   </style>
-</head>
-<body >
-   <div>
-<h2>HOLA</h2>
-<img src="https://i.pinimg.com/280x280_RS/62/7e/54/627e54c3af823abf55e88e6fee1dab22.jpg">
-<h3>mi nombre es jessica velasco cruz</h3>
-<h3>soy estudiante de preparatoria</h3>
-<h3>tengo 17 años</h3>
-<h3>"La perfección de la imperfección"</h3>
-<h3>"BIENVENIDOS"</h3>
- </div>
- 
-  <div>
-    <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShBqsesYmt5hG3q2oT80V2GaittehZoh0InYA6Q77wJvR_r_ITm3mq67dNl2Ubdy-Rx9s&usqp=CAU">
-      <p>espero y esto no afecte mi inteligencia ni tampoco mi sentimiento <p>en el cual puede ser algo dificil de explicar pero<p> quiero que sepas que en la vida todo da vueltas <p>siempre y cuando uno este preparado para las grandes sorpresar<p> que vendran mas delante, tu vive la vida nada<p> es lo que parece, disfruta cada momento como si fuera el ultimo</p>
-      </h3>
-    </div>
-
-</body>
+   </head> 
+   <body> 
+   <form action="">
+   <div class="container"> 
+   <h1>Log In</h1> 
+   <div class="box">
+   <i class="fa fa-envelope"></i> 
+   <input type="email" name="email" id="email" placeholder="enter your email">
+   </div> 
+   <div class="box"> 
+   <i class="fa fa-unlock-alt" id="icon2"></i> 
+   <input type="password" name="password" id="password" placeholder="enter your password"> 
+   </div> 
+   <input class="btn" type="submit" name="submit" id="submit" value="Sign In"> 
+   <input class="btn" type="reset" name="reset" id="reset">
+   </div> 
+   </form>
+   </body> 
 </html>
