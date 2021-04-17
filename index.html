@@ -1,102 +1,171 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/18e20b5b96.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/login.css"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> <title>SIGN IN</title>
-  <style> 
-    *{
-    margin: 0;
-    padding: 0; 
-    font-family: 'Varela Round', sans-serif; 
-    } 
-  body{ 
-  	
-	background: url("https://cdn.pixabay.com/photo/2017/04/05/14/51/london-eye-2205186_960_720.jpg") no-repeat center center fixed; background-size: cover;
-  	} 
-  .container{ 
-    color: white; 
-	position: absolute; 
-	top: 34%; 
-	left: 44%; 
-    }
- .container 
-    h1{ 
- 	display: inline-block;
- 	font-size: 30px; 
- 	border-bottom: 3px solid #00DD00;
- 	margin-bottom: 30px; 
- 	padding: 12 0px; 
- 	}
-  .box{ 
-  	border-top: 2px solid #00DD00;
-  	border-bottom: 2px solid #00DD00;
-  	margin-bottom: 15px;
-  	border-radius: 10px; 
-  	} 
- .box input{
-    height: 100%; 
-    width: 75%; 
-    color: rgb(255, 255, 255);
-    border: none; 
-    outline: none; 
-    margin: 0; 
-    padding: 10px 23px 2px 5px;
-    font-size: 20px;
-    background: none; 
-    } 
-  .btn{ 
-	cursor: pointer; 
-	outline: none; 
-	width: 25%;
-	margin: 12px 0px;
-	padding: 6px; 
-	border-radius: 10px; 
-	border: 2px solid #00DD00; 
-	background: none;
-	color: white; 
-	font-weight: bold; 
-	}
- .box i{ 
- 	padding: 10px 5px;
- 	text-align: center; 
- 	}
-  #icon2{ 
-  	padding-left: 
-  	7px; 
-    } 
- .btn:hover{ 
-	border: none; 
-	color: #00DD00; 
-	background-color: white ; 
-	box-shadow: 0 0 10px #00DD00, 0 0 40px #00DD00, 0 0 80px #00DD00; 
-    }
- .box:hover{ 
- 	color: #00DD00;
- 	background-color: white; 
- 	box-shadow: 0 0 10px #00DD00, 0 0 40px #00DD00, 0 0 80px #00DD00;
- 	}
-  .box input:hover{ color: #00DD00; }
-  </style>
-   </head> 
-   <body> 
-   <form action="">
-   <div class="container"> 
-   <h1>Log In</h1> 
-   <div class="box">
-   <i class="fa fa-envelope"></i> 
-   <input type="email" name="email" id="email" placeholder="enter your email">
-   </div> 
-   <div class="box"> 
-   <i class="fa fa-unlock-alt" id="icon2"></i> 
-   <input type="password" name="password" id="password" placeholder="enter your password"> 
-   </div> 
-   <input class="btn" type="submit" name="submit" id="submit" value="Sign In"> 
-   <input class="btn" type="reset" name="reset" id="reset">
-   </div> 
-   </form>
-   </body> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url("https://cdn.pixabay.com/photo/2017/04/05/14/51/london-eye-2205186_960_720.jpg");
+            background-size: cover;
+            background-color: rgba(2, 82, 151, 0.9);
+            background-blend-mode: lighten;
+        }
+
+        .container {
+            color: #fff;
+            position: absolute;
+            top: 34%;
+            left:44%
+        }
+
+        .container > h1 {
+            display: inline-block;
+            font-size: 30px;
+            letter-spacing: 3px;
+            border-bottom: 3px solid #00DD00;
+            margin-bottom: 30px;
+            padding: 12px 0px;
+        }
+
+        .box {
+            border-top: 2px solid #00DD00;
+            border-bottom: 2px solid #00DD00;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        .box > input {
+            height: 100%;
+            width: 75%;
+            color: rgba(255, 255, 255);
+            border: none;
+            outline:none;
+            margin: 0;
+            padding: 10px 23px 2px 5px;
+            font-size: 20px;
+            background: none;
+        }
+        .btn {
+            cursor: pointer;
+            outline: none;
+            width: 25%;
+            margin: 12px 0px;
+            padding: 6px;
+            border-radius: 10px;
+            border: 2px solid #00DD00;
+            background: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .box i {
+            padding: 10px 5px;
+            text-align: center;
+        }
+
+        #icon2 {
+            padding: 7px;
+        }
+
+        .btn:hover {
+            border: none;
+            color: #00DD00;
+            background-color: #fff;
+            box-shadow: 0 0 10px #00DD00, 0 0 40px #00DD00;
+        }
+        .box:hover {
+            color: #00DD00;
+            background-color: #fff;
+            box-shadow: 0 0 10px #00DD00, 0 0 40px #00DD00;
+        }
+
+        .box input:hover {
+            color: #00DD00;
+        }
+
+        
+
+    /* =========== MEDIA QUERY =========== */
+
+        @media screen and (max-width: 360px) {
+
+            body {
+                background-image: url("https://arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/CGH4T7KVPFD55GL2D5OZWS7EW4.jpg");
+                background-blend-mode: multiply;
+                background-repeat: no-repeat;
+                background-attachment: fixed;    
+            }
+            .container {
+                margin-top: 5rem;
+                transform: translate(-50%, -50%);
+            }
+
+            .container > h1 {
+            letter-spacing: 3px;
+            border-bottom: 3px solid orange;
+            margin-bottom: 30px;
+            padding: 12px 0px;
+            }
+
+            .box {
+            border-top: 3px solid orange;
+            border-bottom: 3px solid orange;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            }
+
+            .box > input {padding: 15px 23px 15px 5px;}
+            .btn {
+            cursor: pointer;
+            outline: none;
+            width: 45%;
+            margin: 12px 2px;
+            padding: 6px;
+            border-radius: 10px;
+            border: 2px solid orange;
+            background: none;
+            color: #fff;
+            font-weight: normal;
+        }
+        .box i {
+            padding: 10px 10px;
+            text-align: center;
+            font-size: 20px;
+            color: orange;
+        }   
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <form action="">
+        <div class="container">
+            <h1>Log In</h1>
+            <div class="box">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <input type="email" name="email" id="email" placeholder="enter your email">
+            </div>
+            <div class="box">
+                <i class="fa fa-unlock-alt" id="icon2" aria-hidden="true"></i>
+                <input type="password" name="password" id="password" placeholder="enter your password">
+            </div>
+            <input class="btn" type="submit" name="submit" id="submit" value="Sign In">
+            <input class="btn" type="reset" name="reset" id="reset">
+        </div>
+    </form>
+
+
+    
+</body>
+<script src="https://kit.fontawesome.com/ab2808ea55.js" crossorigin="anonymous"></script>
 </html>
